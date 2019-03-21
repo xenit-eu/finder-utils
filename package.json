@@ -4,7 +4,7 @@
     "lintFix": "tslint -c ./tslint.json --fix 'src/**/*.ts' --project ./tsconfig.json",
     "test": "karma start ./karma.conf.js --single-run"
   },
-  "name": "finder-utils",
+  "name": "@xenit/finder-utils",
   "main": "src/index.ts",
   "types": "src/index.ts",
   "dependencies": {
