@@ -5,7 +5,10 @@
         "no-magic-numbers":false,
         "strict-boolean-expressions":false,
         "no-require-imports": false,
-        "increment-decrement": false
+        "increment-decrement": false,
+        "no-unsafe-any": false,
+        "strict-type-predicates": false,
+        "strict-comparisons": false
     }
 
 }
