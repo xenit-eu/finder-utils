@@ -1,4 +1,4 @@
-import { arrayContainsAll, arrayIntersect, flatmap, flatten, partition, unique } from "./arrays";
+import { arrayContainsAll, arrayIntersect, flatmap, flatten, partition, unique } from "../src/arrays";
 describe("Array functions", () => {
     it("should run tests", () => {
         expect(true)
