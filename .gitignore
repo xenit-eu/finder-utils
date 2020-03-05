@@ -1,4 +1,3 @@
 dist
 npm-debug.*
 node_modules
-test-results
