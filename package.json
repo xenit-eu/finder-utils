@@ -9,6 +9,7 @@
     "access": "public"
   },
   "name": "@xenit/finder-utils",
+  "license": "LGPL",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "author": {
