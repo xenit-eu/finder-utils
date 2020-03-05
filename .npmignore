@@ -1,0 +1,4 @@
+*
+!dist/*
+*.spec.js
+*.spec.d.ts

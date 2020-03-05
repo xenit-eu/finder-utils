@@ -1,12 +1,20 @@
 language: node_js
 sudo: false
 node_js:
-  - "8"
+- '8'
 install:
-  - npm install
+- npm install
 script:
-  - npm test
-  - npm run lint
+- npm test
+- npm run lint
 cache:
   directories:
-    - node_modules
+  - node_modules
+deploy:
+  provider: npm
+  email: vierbergenlars@gmail.com
+  api_key:
+    secure: Izetz9zpO1FxW+pdEYgoMJw4fK1daRw27ibc9ONH1XqZsALgFAlRl+GI5nfVjjU1Ky3FDzBs94RiVnqw/09LJc5aJ2aCsWPCBCFC73vGXrV6PMxlI113CRhw50Bk7fXWVGsd2D6ZdJAiBt9AX23WePhfiBKX0JhD+yazFlhniUjt5DxhtDVXxnb1mCvw5J0CjgMuASCl0+8MEY26JSOE6GkOdv1+LkB2ogJfrUSzV/seCqxxFLk1bet2RHQ+jEnmGDTV5Q61yUrx5tBlz9CVeCCguWRNAnd+b2DuFuTo53Xc8ys1aBcPoLvXzrifs46bd9xFHBGdIsGdElPIIpLARdhjCVNqE/VnsWraQXH2s3Tyq7eKe7WIzU1nO0WP394xYw0P84YI9E7iJI+BnZ1dU0IjqMP0R1pqEatwsxaY3Ju+9ufnZffSwgDkSrBOOHIAqpllXb2P3FwRWmtKFQX7TGmmQ/diUfxV6BA2OMIqIBlARkVIOYtKZdl4OHtoZf0FztKAH6AmUgpe+QcMfjZLJnep3GFRBQUmRA+1QpowdHmGxV4yJiSMEnc/Ymc3LXqvjL85TjEzhb90oEolxwHTeGEhNSlEDxOdiAAbSqXO/9TSEpfNo+bUwgYxhXbN3zVKZbUFhuJzviEOIRUKql7sD0z8nAITlD83kTJbRp2rwUA=
+  on:
+    tags: true
+    repo: xenit-eu/finder-utils

@@ -1,27 +1,14 @@
 {
     "compilerOptions": {
-        "outDir": "./tmp",
+        "outDir": "./dist",
         "target": "es5",
         "module": "commonjs",
         "moduleResolution": "node",
         "isolatedModules": false,
-        "jsx": "react",
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
-        "declaration": false,
+        "declaration": true,
         "noImplicitAny": true,
         "noImplicitUseStrict": true,
-        "noLib": false,
         "preserveConstEnums": true,
         "strictNullChecks": true,
-        "baseUrl": "./",
-        "paths": {},
-    },
-    "exclude": [
-    ],
-    "compileOnSave": true,
-    "buildOnSave": false,
-    "atom": {
-        "rewriteTsconfig": false
     }
 }
