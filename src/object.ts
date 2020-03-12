@@ -1,1 +1,2 @@
-export { default as deepEqual } from "deep-equal";
+import deepEqual from "deep-equal";
+export { deepEqual };
