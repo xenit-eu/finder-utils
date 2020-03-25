@@ -1,7 +1,7 @@
 export type ReadonlyArray2D<T> = ReadonlyArray<ReadonlyArray<T>>;
 export const emptyArray = <T>(): ReadonlyArray<T> => [];
 
-export const asImmutable = <T>(array: T[]): ReadonlyArray<T> => array as ReadonlyArray<T>;
+export const asImmutable = <T>(array: T[]): ReadonlyArray<T> => array.slice() as ReadonlyArray<T>;
 
 export const flatten = <T>(toFlatten: ReadonlyArray2D<T>): T[] => ([] as T[]).concat(...toFlatten);
 
