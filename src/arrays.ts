@@ -59,7 +59,7 @@ export const partition = <T>(array: ReadonlyArray<T>, partitionFn: PartitionFunc
 
 type UniqueIdFunction<T> = (element: T) => string;
 type MergeFunction<T> = (a: T, b: T) => T;
-const defaultUniqueMergeFunction = <T>(a: T, b: T) => a;
+const defaultUniqueMergeFunction = <T>(a: T) => a;
 export const unique = <T>(
     array: ReadonlyArray<T>,
     uniqueFn: UniqueIdFunction<T>,

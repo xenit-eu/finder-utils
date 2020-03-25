@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "outDir": "./dist",
+        // Emit options
         "target": "es2015",
         "module": "commonjs",
         "moduleResolution": "node",
@@ -8,10 +9,17 @@
         "declaration": true,
         "sourceMap": true,
         "esModuleInterop": true,
+        "noEmitOnError": true,
+        // Compile options
+        "strict": true,
         "noImplicitAny": true,
-        "noImplicitUseStrict": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "importsNotUsedAsValues": "error",
+        "stripInternal": true,
+        "alwaysStrict": true,
         "preserveConstEnums": true,
-        "strictNullChecks": true
     },
     "include": [
         "src"
