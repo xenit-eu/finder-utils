@@ -72,7 +72,7 @@ export const unique = <T>(
         .map((sameItems: ReadonlyArray<T>) => sameItems.reduce(mergeFn));
 };
 
-export const arrayEquals = <T>(a: T[], b: T[], cmp: (a: T, b: T) => boolean = (x: T, y: T) => x === y): boolean => {
+export const arrayEquals = <T>(a: readonly T[], b: readonly T[], cmp: (a: T, b: T) => boolean = (x: T, y: T) => x === y): boolean => {
     if (a.length !== b.length) {
         return false;
     }
