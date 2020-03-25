@@ -72,11 +72,15 @@ export const unique = <T>(
         .map((sameItems: ReadonlyArray<T>) => sameItems.reduce(mergeFn));
 };
 
-export const arrayEquals = <T>(a: readonly T[], b: readonly T[], cmp: (a: T, b: T) => boolean = (x: T, y: T) => x === y): boolean => {
+export const arrayEquals = <T>(
+    a: readonly T[],
+    b: readonly T[],
+    cmp: (a: T, b: T) => boolean = defaultCompareFunction,
+): boolean => {
     if (a.length !== b.length) {
         return false;
     }
-    for (let i = a.length - 1; i >= 0; i--) {
+    for (let i = a.length - 1; i >= 0; i -= 1) {
         if (!cmp(a[i], b[i])) {
             return false;
         }
@@ -86,6 +90,7 @@ export const arrayEquals = <T>(a: readonly T[], b: readonly T[], cmp: (a: T, b: 
 };
 
 type CompareFunction<T> = (a: T, b: T) => boolean;
+// tslint:disable-next-line: strict-comparisons
 const defaultCompareFunction = <T>(a: T, b: T) => a === b;
 
 export const arrayIntersect = <T>(
