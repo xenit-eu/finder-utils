@@ -8,4 +8,5 @@ module.exports = {
         }],
         '@babel/preset-typescript',
     ],
+    plugins: ["transform-class-properties"],
 };

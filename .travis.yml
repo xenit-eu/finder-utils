@@ -28,5 +28,5 @@ deploy:
       secure: Fk048W1pq/u07ohH6NlZPKBKNWuXGYHfVj20WDNY+JChroAhXirtsz7pLcjiDWwP4HeY6oDLDfWGkHroyMsh/0kKVAIu3ZC8wabeITsZiFyKBMXSttL7EXfGoUGUi+6ir6MEFl9QMtcqGHX5kogLZcOiDE6iFPaIZ36fS6WDP7GKIQh5Ufb0i8jDnUVpvbxHZTPtcNlQKJkPXLtXuXnrwGbcBqjaTndVKQcOApCBZsHW/BCtvA/vhk/l0uOBppItrJ+bC89UI3u/+8zeSbqXjYknQQMv2eKxgW099p9/4OpOlpUdEzO6hZmXj9tHdvDymeG65uuswRIvnjEJ1oXGJwsddYgd2xNRY5BQtZWqhenKdsPJ80mbpkxIavLsb2sk2laHgpWwmYrFtGtJy4gW7ZJv0VwFAEv5iE7hZgalt7Qv7E1OoYdL9YL4aQojwzmntW0PzEmIv0ACsAa0oudxxoZPhDXgJz/wIv/enpkQtr7riWiI22A2gJrZdrl6LHP5v/vimiQ/x6bGUEYnu97e7Z+9iLBHko8WH5ox5YyMkodMWkMUVMlMsniRpL6v1qs9NnDOMTRazKcz1yronaGWo+ORcrGC2w82ddaqpCEhuihmlTm6C0tNV7nnadksj1O81I4vjI9G70yw5n056zuC+ds664oGh7a/2EaobuA44H4=
     on:
       tags: true
-      condition: "$TRAVIS_TAG != v*.*.*-*" # Only for versions of the form x.x.x-prerelease
+      condition: "$TRAVIS_TAG == v*.*.*-*" # Only for versions of the form x.x.x-prerelease
       repo: xenit-eu/finder-utils
